@@ -45,7 +45,7 @@ def seccion_noticias(imagenes,titulos,links,imagen_filenm):
 
             # Guardar la imagen
             imagen_filename = f'imagen_{i + 1}.png'
-            imagen.save(f"C:\\Users\\nicol\\Desktop\\proyecto\\CDTR\\assets\\frame1\\noticia{imagen_filename}") #CAMBIAR LA RUTA A CUALQUIERA QUE SEA DESEADA PARA GUARDAR IMAGENES
+            imagen.save(f"C:\\Desktop\\CDTR\\assets\\frame0\\noticia{imagen_filename}") #CAMBIAR LA RUTA A CUALQUIERA QUE SEA DESEADA PARA GUARDAR IMAGENES
             imagen_filenm.append("noticia"+imagen_filename)
             if i==3:
                 break
@@ -88,9 +88,3 @@ def seccion_noticias(imagenes,titulos,links,imagen_filenm):
     else:
         print(f"Error al obtener la página. Código de estado: {pedido.status_code}") #la f es para separar el string del codigo en la misma sentencia
     return imagenes,titulos,links
-
-#imagenes = []
-#titulos = []
-#links= []
-#
-#seccion_noticias(imagenes,titulos,links)
