@@ -1,5 +1,4 @@
 def convertir_float(valor):
-  valor= '1.080.00'
   valor = valor.replace('.','')
   valor= valor[::-1]
   i=0
